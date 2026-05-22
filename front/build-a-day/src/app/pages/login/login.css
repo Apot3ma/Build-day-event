@@ -1,0 +1,137 @@
+.login-container {
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1500382017468-9049fed747ef');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 20px;
+}
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 50, 0, 0.85),
+    rgba(22, 101, 52, 0.7)
+  );
+}
+
+.login-box {
+  position: relative;
+  z-index: 2;
+  width: 100%;
+  max-width: 430px;
+  background: rgba(255,255,255,0.95);
+  backdrop-filter: blur(8px);
+  padding: 40px;
+  border-radius: 28px;
+  box-shadow: 0 15px 45px rgba(0,0,0,0.25);
+}
+
+.tabs {
+  display: flex;
+  background: #e7e5e4;
+  border-radius: 14px;
+  padding: 6px;
+  margin-bottom: 30px;
+}
+
+.tabs button {
+  flex: 1;
+  border: none;
+  background: transparent;
+  padding: 12px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: 0.3s ease;
+}
+
+.tabs button.active {
+  background: #166534;
+  color: white;
+}
+
+.login-box h1 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #166534;
+}
+
+.subtitle {
+  text-align: center;
+  color: #57534e;
+  margin-bottom: 30px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+form input {
+  padding: 15px;
+  border-radius: 14px;
+  border: 1px solid #d6d3d1;
+  font-size: 1rem;
+  transition: 0.3s ease;
+}
+
+form input:focus {
+  outline: none;
+  border-color: #16a34a;
+  box-shadow: 0 0 0 4px rgba(22,163,74,0.15);
+}
+
+form button {
+  margin-top: 10px;
+  border: none;
+  background: #166534;
+  color: white;
+  padding: 15px;
+  border-radius: 14px;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+form button:hover {
+  background: #15803d;
+}
+
+.switch-mode {
+  margin-top: 25px;
+  display: flex;
+  justify-content: center;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+
+.switch-mode span {
+  color: #57534e;
+}
+
+.text-button {
+  border: none;
+  background: transparent;
+  color: #166534;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 500px) {
+  .login-box {
+    padding: 30px 20px;
+  }
+
+  .login-box h1 {
+    font-size: 1.7rem;
+  }
+}

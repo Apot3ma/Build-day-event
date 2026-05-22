@@ -1,0 +1,21 @@
+<div class="listing-grid">
+  <div class="card" *ngFor="let item of items">
+    <img [src]="item.imagen" [alt]="item.nombre" />
+
+    <div class="content">
+      <h2>{{ item.nombre }}</h2>
+
+      <p>{{ item.descripcion }}</p>
+
+      <button
+        [routerLink]="[
+          '/app/detalle',
+          isProducts ? 'producto' : 'servicio',
+          item.id
+        ]"
+      >
+        Ver Detalles
+      </button>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,53 @@
+<section class="hero">
+  <div class="overlay"></div>
+
+  <div class="hero-content">
+    <h1>Soluciones Inteligentes para el Campo</h1>
+
+    <p>
+      Descubre productos y servicios agrícolas diseñados para maximizar
+      productividad y sostenibilidad.
+    </p>
+
+    <div class="hero-buttons">
+      <a routerLink="/app/productos">Explorar Productos</a>
+      <a routerLink="/app/servicios" class="secondary">
+        Ver Servicios
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="stats-section">
+  <div class="stat-card" *ngFor="let stat of quickStats">
+    <div class="icon">{{ stat.icon }}</div>
+
+    <h2>{{ stat.value }}</h2>
+
+    <p>{{ stat.title }}</p>
+  </div>
+</section>
+
+<section class="featured-section">
+  <div class="section-header">
+    <h2>Productos Destacados</h2>
+
+    <a routerLink="/app/productos">Ver todos</a>
+  </div>
+
+  <div class="featured-grid">
+    <div class="featured-card" *ngFor="let item of featuredProducts">
+      <img [src]="item.image" [alt]="item.name" />
+
+      <div class="card-content">
+        <h3>{{ item.name }}</h3>
+
+        <p>{{ item.description }}</p>
+
+        <button [routerLink]="['/app/detalle/producto', item.id]">
+          Más Información
+        </button>
+      </div>
+    </div>
+  </div>
+</section>

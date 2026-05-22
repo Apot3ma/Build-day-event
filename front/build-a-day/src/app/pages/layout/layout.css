@@ -1,0 +1,38 @@
+.layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  height: 70px;
+  background: #166534;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+}
+
+nav {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  flex: 1;
+  padding: 40px;
+}
+
+footer {
+  background: #1c1917;
+  color: white;
+  padding: 30px;
+  text-align: center;
+}

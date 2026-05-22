@@ -1,0 +1,32 @@
+.listing-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+.card {
+  background: white;
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+}
+
+.content {
+  padding: 20px;
+}
+
+.content button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  background: #166534;
+  color: white;
+  border-radius: 10px;
+  cursor: pointer;
+}

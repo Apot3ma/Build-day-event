@@ -1,0 +1,31 @@
+<div class="detail-container" *ngIf="item">
+  <button (click)="volver()">Volver</button>
+
+  <div class="detail-card">
+    <img [src]="item.imagen" [alt]="item.nombre" />
+
+    <div class="detail-content">
+      <h1>{{ item.nombre }}</h1>
+
+      <p>{{ item.descripcion }}</p>
+
+      <button (click)="showModal = true" id="cotizar-btn">
+        Solicitar Cotización
+      </button>
+    </div>
+  </div>
+
+  <div class="modal" *ngIf="showModal">
+    <div class="modal-content">
+      <h2>Solicitar Cotización</h2>
+
+      <input type="text" placeholder="Nombre" />
+      <input type="tel" placeholder="Teléfono" />
+
+      <div class="buttons">
+        <button (click)="showModal = false">Cancelar</button>
+        <button>Enviar</button>
+      </div>
+    </div>
+  </div>
+</div>

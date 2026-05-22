@@ -1,0 +1,21 @@
+<div class="layout">
+  <header>
+    <div class="logo">AgroPro</div>
+
+    <nav>
+      <a routerLink="/app">Inicio</a>
+      <a routerLink="/app/productos">Productos</a>
+      <a routerLink="/app/servicios">Servicios</a>
+
+      <button (click)="logout()">Cerrar Sesión</button>
+    </nav>
+  </header>
+
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+
+  <footer>
+    <p>© 2026 AgroPro</p>
+  </footer>
+</div>
