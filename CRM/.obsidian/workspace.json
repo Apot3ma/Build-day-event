@@ -1,0 +1,242 @@
+{
+  "main": {
+    "id": "a1a8b79a3d181ed3",
+    "type": "split",
+    "children": [
+      {
+        "id": "13e19c0130ecd9c4",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "e0265ce4b6cfe5b8",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "06_Plantillas/Cotizacion.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Cotizacion"
+            }
+          },
+          {
+            "id": "93276dfbdc7eb158",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "03_Cotizaciones/COT-0001.pdf"
+              },
+              "icon": "lucide-file-text",
+              "title": "COT-0001"
+            }
+          }
+        ],
+        "currentTab": 1
+      },
+      {
+        "id": "27d2cbba0122ab14",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "000d6bc3ee5a3ce3",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "81d7d81cf5ee2450",
+    "type": "split",
+    "children": [
+      {
+        "id": "70b4aabdbfab2577",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "a1b15eef03d60461",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de archivos"
+            }
+          },
+          {
+            "id": "f3202c9214479d46",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Buscar"
+            }
+          },
+          {
+            "id": "c15b9659e87325e4",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "58ba1cba97d35ffa",
+    "type": "split",
+    "children": [
+      {
+        "id": "41315d301100477f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2e3af294b04cbe33",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "03_Cotizaciones/COT-0001.pdf",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Enlaces entrantes de COT-0001"
+            }
+          },
+          {
+            "id": "dbe0a32bbf2bce2b",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "03_Cotizaciones/COT-0001.pdf",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Enlaces salientes de COT-0001"
+            }
+          },
+          {
+            "id": "9baf4ce983dc11ff",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Etiquetas"
+            }
+          },
+          {
+            "id": "7f98157b78eaff84",
+            "type": "leaf",
+            "state": {
+              "type": "all-properties",
+              "state": {
+                "sortOrder": "frequency",
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-archive",
+              "title": "Todas las propiedades"
+            }
+          },
+          {
+            "id": "8bb1425d3d5fb72d",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "03_Cotizaciones/COT-0001.pdf",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Esquema de COT-0001"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "bases:Crear nueva base": false
+    }
+  },
+  "active": "a1b15eef03d60461",
+  "lastOpenFiles": [
+    "03_Cotizaciones/Cotizacion_Prueba.md",
+    "03_Cotizaciones/COT-0001.pdf",
+    "06_Plantillas/Cotizacion.md",
+    "06_Plantillas/Cotizacion.md",
+    "03_Cotizaciones/cotizacion_basura.md",
+    "04_Resumenes/resumenes_basura.md",
+    "02_Conversaciones/conversacion_basura.md",
+    "00_Leads/lead_basura.md",
+    "01_Clientes/cliente_basura.md",
+    "06_Plantillas/Lead.md",
+    "06_Plantillas/Cliente.md",
+    "06_Plantillas/Conversacion.md",
+    "06_Plantillas/Resumen.md",
+    "05_Archivos/archivos_basura.md",
+    "06_Plantillas",
+    "Bienvenido.md",
+    "05_Archivos",
+    "06_Productos",
+    "05_Tareas",
+    "04_Resumenes",
+    "03_Cotizaciones",
+    "02_Conversaciones",
+    "01_Clientes",
+    "00_Leads"
+  ]
+}
