@@ -13,26 +13,24 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "03_Cotizaciones/Cotizacion_Prueba.md",
+                "file": "06_Plantillas/Cotizacion.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Cotizacion_Prueba"
+              "title": "Cotizacion"
             }
           },
           {
             "id": "93276dfbdc7eb158",
             "type": "leaf",
             "state": {
-              "type": "markdown",
+              "type": "pdf",
               "state": {
-                "file": "03_Cotizaciones/Cotizacion_Prueba.md",
-                "mode": "source",
-                "source": false
+                "file": "03_Cotizaciones/COT-0001.pdf"
               },
-              "icon": "lucide-file",
-              "title": "Cotizacion_Prueba"
+              "icon": "lucide-file-text",
+              "title": "COT-0001"
             }
           }
         ],
@@ -125,7 +123,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "03_Cotizaciones/Cotizacion_Prueba.md",
+                "file": "03_Cotizaciones/COT-0001.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -135,7 +133,7 @@
                 "unlinkedCollapsed": true
               },
               "icon": "links-coming-in",
-              "title": "Enlaces entrantes de Cotizacion_Prueba"
+              "title": "Enlaces entrantes de COT-0001"
             }
           },
           {
@@ -144,12 +142,12 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "03_Cotizaciones/Cotizacion_Prueba.md",
+                "file": "03_Cotizaciones/COT-0001.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
               "icon": "links-going-out",
-              "title": "Enlaces salientes de Cotizacion_Prueba"
+              "title": "Enlaces salientes de COT-0001"
             }
           },
           {
@@ -187,13 +185,13 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "03_Cotizaciones/Cotizacion_Prueba.md",
+                "file": "03_Cotizaciones/COT-0001.pdf",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
               },
               "icon": "lucide-list",
-              "title": "Esquema de Cotizacion_Prueba"
+              "title": "Esquema de COT-0001"
             }
           }
         ]
@@ -216,8 +214,9 @@
   },
   "active": "a1b15eef03d60461",
   "lastOpenFiles": [
-    "06_Plantillas/Cotizacion.md",
     "03_Cotizaciones/Cotizacion_Prueba.md",
+    "03_Cotizaciones/COT-0001.pdf",
+    "06_Plantillas/Cotizacion.md",
     "06_Plantillas/Cotizacion.md",
     "03_Cotizaciones/cotizacion_basura.md",
     "04_Resumenes/resumenes_basura.md",
