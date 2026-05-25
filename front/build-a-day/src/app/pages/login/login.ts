@@ -18,16 +18,24 @@ export class Login {
   password = '';
   confirmPassword = '';
 
-  constructor(private router: Router, private servicio:MockDataService) {}
+  constructor(
+    private router: Router,
+    private servicio: MockDataService,
+  ) {}
 
   ingresar() {
     if (this.telefono && this.password) {
+      const ingreso = {
+        num_de_celular: this.telefono,
+        contrasena: this.password,
+      };
+      this.servicio.login(ingreso).subscribe({
+        error(err) {
+          console.error(err);
+        },
+      });
 
-      const ingreso={
-        num_de_celular:this.telefono,
-        contrasena:this.password
-      }
-      this.servicio.login(ingreso)
+      sessionStorage.setItem('numtelefono', this.telefono);
 
       this.router.navigate(['/app']);
     }
@@ -42,17 +50,27 @@ export class Login {
       this.password === this.confirmPassword
     ) {
       this.isRegister = false;
-      
+
       const registro = {
-        num_de_celular:this.telefono,
-        usuario:this.usuario,
-        contrasena:this.password
-      }
+        num_de_celular: this.telefono,
+        usuario: this.usuario,
+        contrasena: this.password,
+      };
+
+      this.servicio.register(registro).subscribe({
+        error(err) {
+          console.error(err);
+        },
+      });
+
+      sessionStorage.setItem('numtelefono', this.telefono);
+
       this.telefono = '';
       this.usuario = '';
       this.password = '';
       this.confirmPassword = '';
     }
+
     this.router.navigate(['/app']);
   }
 

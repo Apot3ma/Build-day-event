@@ -3,71 +3,33 @@
 
   <div class="login-box">
     <div class="tabs">
-      <button
-        [class.active]="!isRegister"
-        (click)="isRegister = false"
-      >
-        Iniciar Sesión
-      </button>
+      <button [class.active]="!isRegister" (click)="isRegister = false">Iniciar Sesión</button>
 
-      <button
-        [class.active]="isRegister"
-        (click)="isRegister = true"
-      >
-        Registrarse
-      </button>
+      <button [class.active]="isRegister" (click)="isRegister = true">Registrarse</button>
     </div>
 
-    <h1>
-      {{ isRegister ? 'Crear Cuenta' : 'Bienvenido de nuevo' }}
-    </h1>
+    <h1>{{ isRegister ? 'Crear Cuenta' : 'Bienvenido de nuevo' }}</h1>
 
     <p class="subtitle">
-      {{
-        isRegister
-          ? 'Registra tu cuenta para comenzar'
-          : 'Ingresa tus credenciales para continuar'
+      {{ isRegister ? 'Registra tu cuenta para comenzar' : 'Ingresa tus credenciales para continuar'
       }}
     </p>
 
-    <form
-      *ngIf="!isRegister"
-      (ngSubmit)="ingresar()"
-    >
-      <input
-        type="tel"
-        [(ngModel)]="telefono"
-        name="telefono"
-        placeholder="Número de teléfono"
-      />
-<input
-        type="password"
-        [(ngModel)]="password"
-        name="password"
-        placeholder="Contraseña"
-      />
+    <form *ngIf="!isRegister" (ngSubmit)="ingresar()">
+      <input type="tel" [(ngModel)]="telefono" name="telefono" placeholder="Número de teléfono" />
+      <input type="password" [(ngModel)]="password" name="password" placeholder="Contraseña" />
 
-      <button type="submit">
-        Ingresar
-      </button>
+      <button type="submit" (click)="ingresar()">Ingresar</button>
     </form>
 
-    <form
-      *ngIf="isRegister"
-      (ngSubmit)="registrarse()"
-    >
+    <form *ngIf="isRegister" (ngSubmit)="registrarse()">
       <input
         type="tel"
         [(ngModel)]="telefono"
         name="telefonoRegistro"
         placeholder="Número de teléfono"
       />
-      <input
-        type="text"
-        [(ngModel)]="usuario"
-        name="usuario"
-        placeholder="Nombre de usuario"
-      />
+      <input type="text" [(ngModel)]="usuario" name="usuario" placeholder="Nombre de usuario" />
 
       <input
         type="password"
@@ -83,30 +45,14 @@
         placeholder="Confirmar contraseña"
       />
 
-      <button type="submit">
-        Crear Cuenta
-      </button>
+      <button type="submit" (click)="registrarse()">Crear Cuenta</button>
     </form>
 
     <div class="switch-mode">
-      <span>
-        {{
-          isRegister
-            ? '¿Ya tienes cuenta?'
-            : '¿Aún no tienes cuenta?'
-        }}
-      </span>
+      <span> {{ isRegister ? '¿Ya tienes cuenta?' : '¿Aún no tienes cuenta?' }} </span>
 
-      <button
-        type="button"
-        class="text-button"
-        (click)="cambiarFormulario()"
-      >
-        {{
-          isRegister
-            ? 'Iniciar sesión'
-            : 'Registrarse'
-        }}
+      <button type="button" class="text-button" (click)="cambiarFormulario()">
+        {{ isRegister ? 'Iniciar sesión' : 'Registrarse' }}
       </button>
     </div>
   </div>

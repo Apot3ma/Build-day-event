@@ -9,9 +9,18 @@
 
       <p>{{ item.descripcion }}</p>
 
-      <button (click)="showModal = true" id="cotizar-btn">
-        Solicitar Cotización
-      </button>
+      @for (item of item.caracteristicas; track $index) {
+          <li>{{ item }}</li>
+      }
+
+      @for (item of item.beneficios; track $index) {
+          <li>{{ item }}</li>
+      }
+      
+
+      <p>{{item.precio}}</p>
+
+      <button (click)="cotizar()" id="cotizar-btn">Solicitar Cotización</button>
     </div>
   </div>
 
